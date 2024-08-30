@@ -31,6 +31,7 @@ Para ejecutar esta aplicación correctamente, es **recomendado** tener instalada
 - Node.js **v20.x**: Puedes descargarlo desde [Node.js Official Website](https://nodejs.org/).
 - npm (viene con la instalación de Node.js).
 - Git: Para clonar el repositorio. Puedes descargarlo desde [sitio web oficial de Git](https://git-scm.com/download/win).
+- Base de datos local o en la nube: Asegúrate de tener una base de datos. Puedes tener una local descargando [App Server](https://www.appserv.org/en/download/).
 
 ### Instrucciones de Instalación
 
@@ -87,18 +88,20 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 1. **Configura las variables de entorno en el backend:**
    - Dentro del directorio `OrientacionVocacional\BackEnd_OrientacionVocacional`, crea un archivo `.env`.
+   - Utiliza una base de datos Mysql
    - Añade las siguientes variables necesarias con las credenciales y configuraciones adecuadas:
 
      ```cmd
-     SECRET_KEY=''    ##Clave secreta para jwt
-     DB_NAME=''       ##Nombre de la base datos
-     DB_USER=''       ##Usuario de la base datos
-     DB_PASSWORD=''   ##Contraseña de la base datos
-     DB_HOST=''       ##Host
-     PORT=''          ##Puerto
-     DATABASE_URL=''  ##URL Para producción
-     ```
+     SECRET_KEY=''                  ##Clave secreta para jwt puede ser generada en https://www.roboform.com/es/password-generator
+     DB_NAME=''                     ##Nombre de la base datos
+     DB_USER=''                     ##Usuario de la base datos
+     DB_PASSWORD=''                 ##Contraseña de la base datos
+     DB_HOST=''                     ##Host
+     PORT=''                        ##Puerto recomendado 3001 para modo desarrollo
 
+
+     ```
+  
    - Asegúrate de reemplazar estos valores con las credenciales y configuraciones específicas para tu entorno.
 
 

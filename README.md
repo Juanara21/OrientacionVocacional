@@ -11,11 +11,11 @@
 ## Tabla de contenidos:
 
 
-- [Instalación](#instalacion)
+- [Instalación](#instalación)
 - [Como empezar](#como-empezar)
 - [API y Rutas](#api-y-rutas)
-- [Caracteristicas](#Caracteristicas)
-- [Arquitectura](#Arquitectura)
+- [Caracteristicas](#caracteristicas)
+- [Arquitectura](#arquitectura)
 - [Implementación en la nube](#implementacion-en-la-nube)
 - [Autor/es](#autores)
 - [Directorio Github](#directorio-github)

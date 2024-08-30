@@ -86,17 +86,17 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 ## 2. Configuración de Variables de Entorno
 
 1. **Configura las variables de entorno en el backend:**
-   - Dentro del directorio `backend`, crea un archivo `.env`.
+   - Dentro del directorio `OrientacionVocacional\BackEnd_OrientacionVocacional`, crea un archivo `.env`.
    - Añade las siguientes variables necesarias con las credenciales y configuraciones adecuadas:
 
      ```cmd
-     SECRET_KEY=''
-     DB_NAME=''
-     DB_USER=''
-     DB_PASSWORD=''
-     DB_HOST=''
-     PORT=''
-     DATABASE_URL=''
+     SECRET_KEY=''    ##Clave secreta para jwt
+     DB_NAME=''       ##Nombre de la base datos
+     DB_USER=''       ##Usuario de la base datos
+     DB_PASSWORD=''   ##Contraseña de la base datos
+     DB_HOST=''       ##Host
+     PORT=''          ##Puerto
+     DATABASE_URL=''  ##URL Para producción
      ```
 
    - Asegúrate de reemplazar estos valores con las credenciales y configuraciones específicas para tu entorno.

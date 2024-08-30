@@ -91,7 +91,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
      ```cmd
      npm start
      ```
-   - Esto levantará el servidor en el puerto configurado en las variables de entorno, generalmente `http://localhost:3000`.
+   - Esto levantará el servidor en el puerto configurado en las variables de entorno, generalmente `http://localhost:3001`.
 
 #### Frontend
 1. **Levanta la aplicación Angular:**

@@ -64,14 +64,20 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
      ```
 
 #### Frontend
-1. **Navega al directorio del frontend:**
-   - Abre otra terminal `cmd` o utiliza la misma terminal después de instalar las dependencias del backend.
-   - Dirígete al directorio del frontend ejecutando el siguiente comando:
+1. **Instalar Angular CLI (si no está instalado):**
+   - Antes de instalar las dependencias del frontend, asegúrate de que Angular CLI esté instalado globalmente en tu sistema.
+   - Si no lo tienes, puedes instalarlo ejecutando el siguiente comando:
      ```cmd
-     cd OrientacionVocacional\FrontEnd_OrientacionVocacional
+     npm install -g @angular/cli
      ```
 
-2. **Instala las dependencias necesarias:**
+2. **Navega al directorio del frontend:**
+   - Luego, dirígete al directorio del frontend ejecutando el siguiente comando:
+     ```cmd
+     cd ..\frontend
+     ```
+
+3. **Instala las dependencias necesarias:**
    - Ejecuta el siguiente comando para instalar todas las dependencias del frontend:
      ```cmd
      npm install

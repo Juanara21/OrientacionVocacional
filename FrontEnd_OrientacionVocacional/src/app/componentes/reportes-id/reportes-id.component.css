@@ -1,0 +1,10 @@
+.mat-table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+    font-size: 15px;
+  }
+  #barChart {
+    width: 400px;
+    height: 300px;
+  }
+  

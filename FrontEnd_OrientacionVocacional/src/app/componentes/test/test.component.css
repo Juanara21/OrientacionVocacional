@@ -1,0 +1,18 @@
+.form-group {
+    margin: 15px 0;
+  }
+  
+  .custom-control {
+    margin-bottom: 5px;
+  }
+
+.container{
+    max-width: 90%;
+}
+
+.question-separator {
+    border: none;
+    border-top: 1px solid #979797b7;
+    margin: 30px 0;
+  }
+  

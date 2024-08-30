@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    background: #020a14;
+    color: #ffffffd0;
+    height: 50px;
+}
+p{
+    
+    padding: 15px 0px;
+    display: flex;
+    font-size: 13px;   
+    justify-content: center;
+    
+
+}

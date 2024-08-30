@@ -54,7 +54,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
    - Abre una terminal `cmd` y dirígete al directorio donde clonaste el repositorio.
    - Luego, ingresa al directorio del backend ejecutando el siguiente comando:
      ```cmd
-     cd orientacion-vocacional\backend
+     cd OrientacionVocacional\BackEnd_OrientacionVocacional
      ```
 
 2. **Instala las dependencias necesarias:**
@@ -68,7 +68,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
    - Abre otra terminal `cmd` o utiliza la misma terminal después de instalar las dependencias del backend.
    - Dirígete al directorio del frontend ejecutando el siguiente comando:
      ```cmd
-     cd ..\frontend
+     cd OrientacionVocacional\FrontEnd_OrientacionVocacional
      ```
 
 2. **Instala las dependencias necesarias:**
@@ -89,7 +89,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 1. **Inicia el servidor backend:**
    - Desde el directorio `backend`, ejecuta el siguiente comando para iniciar el servidor:
      ```cmd
-     npm start
+     npm run dev
      ```
    - Esto levantará el servidor en el puerto configurado en las variables de entorno, generalmente `http://localhost:3001`.
 

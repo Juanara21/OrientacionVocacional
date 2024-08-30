@@ -74,7 +74,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 2. **Navega al directorio del frontend:**
    - Luego, dirígete al directorio del frontend ejecutando el siguiente comando:
      ```cmd
-     cd ..\frontend
+     cd OrientacionVocacional\FrontEnd_OrientacionVocacional
      ```
 
 3. **Instala las dependencias necesarias:**
@@ -83,11 +83,24 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
      npm install
      ```
 
-### 2. Configuración de Variables de Entorno
+## 2. Configuración de Variables de Entorno
 
 1. **Configura las variables de entorno en el backend:**
    - Dentro del directorio `backend`, crea un archivo `.env`.
-   - Añade las variables necesarias como las credenciales de la base de datos, puerto, secret keys, etc.
+   - Añade las siguientes variables necesarias con las credenciales y configuraciones adecuadas:
+
+     ```cmd
+     SECRET_KEY=''
+     DB_NAME=''
+     DB_USER=''
+     DB_PASSWORD=''
+     DB_HOST=''
+     PORT=''
+     DATABASE_URL=''
+     ```
+
+   - Asegúrate de reemplazar estos valores con las credenciales y configuraciones específicas para tu entorno.
+
 
 ### 3. Iniciar la Aplicación
 

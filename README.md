@@ -41,3 +41,71 @@ Primero, clona el repositorio a tu máquina local utilizando Git. Abre tu termin
 git clone https://github.com/Juanara21/OrientacionVocacional.git
 ```
 ---
+
+## Como empezar
+
+
+Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, sigue estos pasos para comenzar a trabajar con la aplicación:
+
+### 1. Instalación de Dependencias
+
+#### Backend
+1. **Navega al directorio del backend:**
+   - Abre una terminal `cmd` y dirígete al directorio donde clonaste el repositorio.
+   - Luego, ingresa al directorio del backend ejecutando el siguiente comando:
+     ```cmd
+     cd orientacion-vocacional\backend
+     ```
+
+2. **Instala las dependencias necesarias:**
+   - Ejecuta el siguiente comando para instalar todas las dependencias del backend:
+     ```cmd
+     npm install
+     ```
+
+#### Frontend
+1. **Navega al directorio del frontend:**
+   - Abre otra terminal `cmd` o utiliza la misma terminal después de instalar las dependencias del backend.
+   - Dirígete al directorio del frontend ejecutando el siguiente comando:
+     ```cmd
+     cd ..\frontend
+     ```
+
+2. **Instala las dependencias necesarias:**
+   - Ejecuta el siguiente comando para instalar todas las dependencias del frontend:
+     ```cmd
+     npm install
+     ```
+
+### 2. Configuración de Variables de Entorno
+
+1. **Configura las variables de entorno en el backend:**
+   - Dentro del directorio `backend`, crea un archivo `.env`.
+   - Añade las variables necesarias como las credenciales de la base de datos, puerto, secret keys, etc.
+
+### 3. Iniciar la Aplicación
+
+#### Backend
+1. **Inicia el servidor backend:**
+   - Desde el directorio `backend`, ejecuta el siguiente comando para iniciar el servidor:
+     ```cmd
+     npm start
+     ```
+   - Esto levantará el servidor en el puerto configurado en las variables de entorno, generalmente `http://localhost:3000`.
+
+#### Frontend
+1. **Levanta la aplicación Angular:**
+   - Desde el directorio `frontend`, ejecuta el siguiente comando:
+     ```cmd
+     ng serve
+     ```
+   - La aplicación frontend estará disponible en `http://localhost:4200`.
+
+### 4. Acceder a la Aplicación
+
+- Una vez que ambos servidores (backend y frontend) estén en funcionamiento, puedes acceder a la aplicación visitando `http://localhost:4200` en tu navegador.
+
+---
+
+
+

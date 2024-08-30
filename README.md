@@ -30,7 +30,7 @@ Para ejecutar esta aplicación correctamente, es **recomendado** tener instalada
 
 - Node.js **v20.x**: Puedes descargarlo desde [Node.js Official Website](https://nodejs.org/).
 - npm (viene con la instalación de Node.js).
-- Git: Para clonar el repositorio.
+- Git: Para clonar el repositorio. Puedes descargarlo desde [sitio web oficial de Git](https://git-scm.com/download/win) 
 
 ### Instrucciones de Instalación
 

@@ -9,12 +9,12 @@
 ## Tabla de contenidos:
 ---
 
-- [Instalación](#instalación)
+- [Instalación](#instalacion)
 - [Como empezar](#como-empezar)
 - [API y Rutas](#api-y-rutas)
 - [Caracteristicas](#Caracteristicas)
 - [Arquitectura](#Arquitectura)
-- [Implementacion en la nube](#implementacion-en-la-nube)
+- [Implementación en la nube](#implementacion-en-la-nube)
 - [Autor/es](#autores)
 - [Directorio Github](#directorio-github)
 

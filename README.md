@@ -18,6 +18,7 @@
 - [Autor/es](#autores)
 - [Directorio Github](#directorio-github)
 
+---
 
 ## Instalación
 ---
@@ -34,5 +35,7 @@ Para ejecutar esta aplicación correctamente, es **recomendado** tener instalada
 #### 1. Clonar el Repositorio
 Primero, clona el repositorio a tu máquina local utilizando Git. Abre tu terminal y ejecuta el siguiente comando:
 
-```bash
-git clone https://github.com/tu_usuario/orientacion-vocacional.git
+```cmd
+git clone https://github.com/Juanara21/OrientacionVocacional.git
+
+---

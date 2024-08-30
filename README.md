@@ -9,14 +9,13 @@
 ## Tabla de contenidos:
 ---
 
-- [Badges o escudos](#badges-o-escudos)
-- [Descripción y contexto](#descripción-y-contexto)
-- [Guía de usuario](#guía-de-usuario)
-- [Guía de instalación](#guía-de-instalación)
-- [Cómo contribuir](#cómo-contribuir)
-- [Código de conducta](#código-de-conducta)
+- [Instalación](#instalación)
+- [Como empezar](#como-empezar)
+- [API y Rutas](#api-y-rutas)
+- [Caracteristicas](#Caracteristicas)
+- [Arquitectura](#Arquitectura)
+- [Implementacion en la nube](#implementacion-en-la-nube)
 - [Autor/es](#autores)
-- [Información adicional](#información-adicional)
-- [Licencia](#licencia)
-- [Limitación de responsabilidades - Solo BID](#limitación-de-responsabilidades)
+- [Directorio Github](#directorio-github)
+
 

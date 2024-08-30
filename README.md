@@ -35,7 +35,7 @@ Para ejecutar esta aplicación correctamente, es **recomendado** tener instalada
 ### Instrucciones de Instalación
 
 #### 1. Clonar el Repositorio
-Primero, clona el repositorio a tu máquina local utilizando Git. Abre tu terminal y ejecuta el siguiente comando:
+Primero, clona el repositorio a tu máquina local utilizando Git. Abre tu terminal en la carpeta que deseas ubicar el repositorio y ejecuta el siguiente comando:
 
 ```cmd
 git clone https://github.com/Juanara21/OrientacionVocacional.git

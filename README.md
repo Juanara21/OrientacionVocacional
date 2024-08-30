@@ -6,8 +6,10 @@
 <p align="center">interfaz principal de la herramienta</p>
 <p align="center"><img src="https://media.licdn.com/dms/image/v2/D4E22AQEEjg16MlSDNA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1686881680355?e=1727913600&v=beta&t=37W_ulk93fDGGEmIzr9U04XG-buZI_pW5ri6ixTwCbc"/></p> 
 
-## Tabla de contenidos:
 ---
+
+## Tabla de contenidos:
+
 
 - [Instalación](#instalacion)
 - [Como empezar](#como-empezar)
@@ -21,7 +23,7 @@
 ---
 
 ## Instalación
----
+
 
 ### Requisitos Previos
 Para ejecutar esta aplicación correctamente, es **recomendado** tener instalada una versión **par** de Node.js, específicamente **v20.x**. Asegúrate de que tu entorno cumpla con los siguientes requisitos:
@@ -37,5 +39,5 @@ Primero, clona el repositorio a tu máquina local utilizando Git. Abre tu termin
 
 ```cmd
 git clone https://github.com/Juanara21/OrientacionVocacional.git
-
+```
 ---

@@ -19,3 +19,20 @@
 - [Directorio Github](#directorio-github)
 
 
+## Instalación
+---
+
+### Requisitos Previos
+Para ejecutar esta aplicación correctamente, es **recomendado** tener instalada una versión **par** de Node.js, específicamente **v20.x**. Asegúrate de que tu entorno cumpla con los siguientes requisitos:
+
+- Node.js **v20.x**: Puedes descargarlo desde [Node.js Official Website](https://nodejs.org/).
+- npm (viene con la instalación de Node.js).
+- Git: Para clonar el repositorio.
+
+### Instrucciones de Instalación
+
+#### 1. Clonar el Repositorio
+Primero, clona el repositorio a tu máquina local utilizando Git. Abre tu terminal y ejecuta el siguiente comando:
+
+```bash
+git clone https://github.com/tu_usuario/orientacion-vocacional.git

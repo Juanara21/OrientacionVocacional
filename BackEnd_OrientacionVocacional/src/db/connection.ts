@@ -10,14 +10,21 @@ const {
   DATABASE_URL
 } = process.env;
 
-if (!DB_NAME || !DB_USER || !DB_PASSWORD || !DB_HOST) {
-  throw new Error('Error al obtener credenciales de la DATABASE');
-}
+// if (!DB_NAME || !DB_USER || !DB_PASSWORD || !DB_HOST) {
+//   throw new Error('Error al obtener credenciales de la DATABASE');
+// }
 
 
-const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
+// const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
     
-   host: DB_HOST,
+  //  host: DB_HOST,
+  
+  if (!DATABASE_URL) {
+    throw new Error('DATABASE_URL no está definido en las variables de entorno');
+  }
+  
+  const sequelize = new Sequelize(DATABASE_URL, {
+    
     dialect: 'postgres',
     dialectOptions: {
       ssl: {

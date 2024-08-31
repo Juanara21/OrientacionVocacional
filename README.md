@@ -132,7 +132,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 
 
-#### Rutas de Usuario
+### Rutas de Usuario
 
 #### `GET /api/users/`
 
@@ -157,7 +157,7 @@ localhost:3001/api/users/user/:username
 
 ```
 
-#### `GET /api/users/user/:username`
+#### `PUT /api/users/user/:username`
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.
 
@@ -183,20 +183,41 @@ localhost:3001/api/users/:username
     }
 
 ```
+#### `DELETE /api/users/:username`
 
+-Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
 
 ```javascript
 
-
-
-
 // (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
 localhost:3001/api/users/:username
+ 
+
+```
+
+#### `PUT /api/users/user/:username`
+
+-Este endpoint requiere un cuerpo JSON para la solicitud.
+
+```javascript
+
 
 // (PUT) Ruta para cambiar la contraseña de un usuario (requiere auth por JWT)
 localhost:3001/api/users/user/:username
 
 ```
+- Ejemplo del JSON requerido.
+0
+```javascript
+
+{
+  "oldPassword": "SecurePass1",
+  "newPassword": "NewSecurePass2"
+}
+
+
+```
+
 
 #### Rutas de Sesión
 

@@ -573,18 +573,16 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
         
   -Verifica que el proyecto este bien configurado y ejecute de manera correcta en el entorno local. 
 
-  -Dirigete a la ruta `./src/app/servicios` y remplaza la url del localhost por la proporcionada por vercel en la variable `this.myAppUrl` en cada servicio.
-
-    ```javascript
+  -Dirigete a la ruta `./src/app/servicios` y remplaza la url del `localhost` por la proporcionada por vercel del backend en la variable `this.myAppUrl`, esto para cada servicio.
+   ```javascript
         private myAppUrl: string;
         private myApiUrl: string;
 
         constructor(private http: HttpClient) {
-          this.myAppUrl =  'https://backorientacionvocacional.vercel.app/';
+          this.myAppUrl =  'http://localhost:3001/';
           this.myApiUrl = 'api/career/';
       }
-             
-     ```  
+   ```  
 
 
 

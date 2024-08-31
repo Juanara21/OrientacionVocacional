@@ -162,15 +162,15 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     -Este endpoint requiere un cuerpo JSON para la solicitud.
 
-      ```javascript
+     ```javascript
 
       // (PUT) Ruta para actualizar un usuario existente (requiere auth por JWT)
       localhost:3001/api/users/:username
 
-      ```
+     ```
     - Ejemplo del JSON requerido.
 
-      ```javascript
+     ```javascript
 
           {
             "primer_nombre": "Juan",
@@ -183,34 +183,34 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
             "sexo": "M"
           }
 
-      ```
+    ```
 * #### `DELETE /api/users/:username`
 
     -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
 
-      ```javascript
+    ```javascript
 
       // (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
       localhost:3001/api/users/:username
       
 
-      ```
+    ```
 
 
 * #### `PUT /api/users/user/:username`
 
     -Este endpoint requiere un cuerpo JSON para la solicitud.
 
-      ```javascript
+    ```javascript
 
 
       // (PUT) Ruta para cambiar la contraseña de un usuario (requiere auth por JWT)
       localhost:3001/api/users/user/:username
 
-      ```
+    ```
     - Ejemplo del JSON requerido.
 
-      ```javascript
+    ```javascript
 
       {
         "oldPassword": "SecurePass1",
@@ -218,7 +218,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
       }
 
 
-      ```
+    ```
 
 
 ## [Rutas de sesion](https://adminlte.io)
@@ -227,16 +227,16 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     -Este endpoint requiere un cuerpo JSON para la solicitud.
 
-      ```javascript
+    ```javascript
 
 
       // (POST) Ruta para crear un nuevo usuario (requiere auth por JWT)
       localhost:3001/api/sesion/
 
-      ```
+    ```
     - Ejemplo del JSON requerido.
 
-      ```javascript
+    ```javascript
 
       {
         "username": "juan123",
@@ -251,7 +251,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
         "sexo": "M"
       }
 
-      ```
+    ```
 * #### `POST/api/sesion/login/`
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.

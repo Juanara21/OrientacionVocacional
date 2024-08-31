@@ -24,7 +24,7 @@
 - [Caracteristicas](#caracteristicas)
 
 - [Autor/es](#autores)
-- [Directorio Github /Registro de cambios](#directorio )
+- [Directorio Github /Registro de cambios](#directorio)
 
 ---
 

@@ -278,22 +278,44 @@ localhost:3001/api/sesion/login
 
 
 
-#### Rutas de Reportes
+## [Rutas de Reportes](https://adminlte.io)
 
-```javascript
-
-// (GET) Ruta para obtener todos los usuarios (requiere auth por JWT, rol: admin)
-localhost:3001/api/reportes/
-
-// (GET) Ruta para obtener usuarios sin información completa (requiere auth por JWT, rol: admin)
-localhost:3001/api/reportes/user
-
-// (GET) Ruta para obtener un usuario por ID (requiere auth por JWT, rol: admin)
-localhost:3001/api/reportes/:id
+ * #### `GET/api/reportes/`
 
 
+    -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
-```
+      ```javascript
+
+      // (GET) Ruta para obtener todos los usuarios (requiere auth por JWT, rol: admin)
+      localhost:3001/api/reportes/    
+
+      ```
+
+* #### `GET /api/reportes/user`
+
+    -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
+
+     ```javascript
+
+      // (GET) Ruta para obtener usuarios sin información completa (requiere auth por JWT, rol: admin)
+      localhost:3001/api/reportes/user
+      
+
+     ```
+* #### `GET /api/reportes/:id`
+
+    -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:id` en la URL con el id de usuario que deseas buscar.
+
+     ```javascript
+
+      // (GET) Ruta para obtener un usuario por ID (requiere auth por JWT, rol: admin)
+      localhost:3001/api/reportes/:id
+      
+
+     ```    
+
+
 
 #### Rutas de Preguntas
 

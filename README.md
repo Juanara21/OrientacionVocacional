@@ -520,9 +520,9 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
 
   -Asegúrate de tener un archivo `.gitignore` en la raíz para excluir archivos innecesarios del control de versiones.
 
-  1. **Crear el archivo `vercel.json`:**
+1. **Crear el archivo `vercel.json`**
 
-    - Crea un archivo `vercel.json` en la raíz de tu proyecto con el siguiente contenido.
+ - Crea un archivo `vercel.json` en la raíz de tu proyecto con el siguiente contenido.
 
       ```json
       {

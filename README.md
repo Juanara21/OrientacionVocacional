@@ -461,9 +461,9 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     ```json
     {
-      "valor": "Respuesta correcta",
-      "UserId": 1,
-      "QuestionId": 1
+      "valor": 1,
+      "UserId": 6,
+      "QuestionId": 4
     }
     ```
 
@@ -480,7 +480,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     ```json
     {
-      "valor": "Respuesta actualizada"
+      "valor": 1
     }
     ```
 

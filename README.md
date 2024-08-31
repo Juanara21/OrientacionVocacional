@@ -14,10 +14,10 @@
 - [Instalación](#instalación)
 - [Como empezar](#como-empezar)
 - [API y Rutas](#api-y-rutas)
-
+- [Implementación en la nube](#implementacion-en-la-nube)
 - [Arquitectura](#arquitectura)
 - [Caracteristicas](#caracteristicas)
-- [Implementación en la nube](#implementacion-en-la-nube)
+
 - [Autor/es](#autores)
 - [Directorio Github](#directorio-github)
 
@@ -496,7 +496,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     localhost:3001/api/answer/:id
     ```
 ---
-## Características Principales
+## Características 
 - Gestión de usuarios con roles de administrador y usuarios regulares.
 - Creación y administración de preguntas y carreras profesionales.
 - Test de orientación vocacional con resultados personalizados.

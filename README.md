@@ -134,7 +134,8 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 ### [Rutas de Usuario](https://adminlte.io)
 
-#### **`GET /api/users/`**
+#### `GET /api/users/`
+...
 
 -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
@@ -145,7 +146,7 @@ localhost:3001/api/users/
  
 
 ```
-***
+
 #### `GET /api/users/user/:username`
 
 -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.

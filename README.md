@@ -514,7 +514,7 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
 
   ### Pasos para el Despliegue
 
-    #### Backend
+   #### Backend
         
     - Verifica que el proyecto este bien configurado y ejecute de manera correcta en el entorno local. 
 

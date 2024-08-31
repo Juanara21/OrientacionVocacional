@@ -522,7 +522,7 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
 
   1. **Crear el archivo `vercel.json`:**
 
-   Crea un archivo `vercel.json` en la raíz de tu proyecto con el siguiente contenido:
+  -Crea un archivo `vercel.json` en la raíz de tu proyecto con el siguiente contenido:
 
       ```json
       {
@@ -546,7 +546,7 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
       ```
   2. **Inicia sesión en Vercel**
 
-      -Visita Vercel y accede a tu cuenta.
+    -Visita Vercel y accede a tu cuenta.
 
   3. **Conectar tu Proyecto a tu Repositorio Git**
 

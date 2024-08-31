@@ -502,7 +502,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 ---
 ## Implementación en la nube
 
-Esta guía te conducirá a través del proceso de desplegar tu proyecto backend con Express.js y tu proyecto frontend en Angular en Vercel, una plataforma en la nube destacada por su interfaz intuitiva y sus potentes funciones de despliegue. Puedes ver la documentacion oficial desde [Vercel Official site](https://vercel.com/guides/using-express-with-vercel)
+Esta guía te conducirá a través del proceso de desplegar tu proyecto backend con `Express.js` y tu proyecto frontend en `Angular` en `Vercel`, una plataforma en la nube destacada por su interfaz intuitiva y sus potentes funciones de despliegue. Puedes ver la documentacion oficial desde [Vercel Official site](https://vercel.com/guides/using-express-with-vercel)
 
   ### Requisitos Previos
 

@@ -128,11 +128,11 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 - Una vez que ambos servidores (backend y frontend) estén en funcionamiento, puedes acceder a la aplicación visitando `http://localhost:4200` en tu navegador.
 
 ---
-# Rutas de la API
+## Rutas de la API
 
-## Rutas de Usuario
 
-### `GET /api/users/`
+
+### `Rutas de Usuario`
 
 ```javascript
 

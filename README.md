@@ -372,17 +372,74 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
      - Ejemplo del JSON requerido.
 
-      ```json
-          {
-            "descripcion": "¿Cuál es la capital de Italia?",
-            "CareerId": 2
-          }
-      ```  
+        ```json
+            {
+              "descripcion": "¿Cuál es la capital de Italia?",
+              "CareerId": 2
+            }
+        ```  
 
 
 
 
-#### Rutas de Carreras
+## [Rutas de Carreras](https://adminlte.io)
+
+* #### `GET /api/career/`
+
+  - Este endpoint no requiere un cuerpo JSON para la solicitud.
+
+    ```javascript
+    // (GET) Ruta para obtener todas las carreras (requiere auth por JWT)
+    localhost:3001/api/career/
+    ```
+
+* #### `POST /api/career/`
+
+  - Este endpoint requiere un cuerpo JSON para la solicitud.
+
+    ```javascript
+    // (POST) Ruta para crear una nueva carrera (requiere auth por JWT, rol: admin)
+    localhost:3001/api/career/
+    ```
+
+  - Ejemplo del JSON requerido.
+
+    ```json
+    {
+      "career": "Ingeniería en Sistemas"
+    }
+    ```
+
+* #### `PUT /api/career/:id`
+
+  - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el ID de la carrera que deseas actualizar.
+
+    ```javascript
+    // (PUT) Ruta para actualizar una carrera existente (requiere auth por JWT, rol: admin)
+    localhost:3001/api/career/:id
+    ```
+
+  - Ejemplo del JSON requerido.
+
+    ```json
+    {
+      "career": "Ingeniería en Redes"
+    }
+    ```
+
+  - Nota: Reemplaza `:id` con el ID de la carrera que deseas actualizar.
+
+* #### `DELETE /api/career/:id`
+
+  - Este endpoint no requiere un cuerpo JSON para la solicitud, pero debes reemplazar `:id` en la URL con el ID de la carrera que deseas eliminar.
+
+    ```javascript
+    // (DELETE) Ruta para eliminar una carrera existente (requiere auth por JWT, rol: admin)
+    localhost:3001/api/career/:id
+    ```
+
+  - Nota: Reemplaza `:id` con el ID de la carrera que deseas eliminar.
+
 
 ```javascript
 

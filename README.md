@@ -360,9 +360,10 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
         // (DELETE) Ruta para eliminar una pregunta existente (requiere auth por JWT, rol: admin)
         localhost:3001/api/question/:id
       ```
-  * #### `PATCH /api/question/:id`
 
-    - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el id de la pregunta que deseas actualizar..
+  * #### `PATCH/api/question/:id`
+
+    -Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el id de la pregunta que deseas actualizar..
 
      ```javascript
         // (PATCH) Ruta para actualizar una pregunta existente (requiere auth por JWT, rol: admin)

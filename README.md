@@ -511,14 +511,16 @@ Este proyecto fue desarrollado por:
 - **Juan Araujo Saucedo**  
   [Perfil en GitHub](https://github.com/Juanara21)  
   [Portafolio Web](https://juanaraujo.netlify.app/)
-  [Perfil en LinkedIn](www.linkedin.com/in/juan-junior-araujo-saucedo-29447514a)
+  [Perfil en LinkedIn](https://www.linkedin.com/in/juan-junior-araujo-saucedo-29447514a)
 
 ---
 ## Directorio GitHub
 
 Puedes encontrar el repositorio del proyecto en GitHub en el siguiente enlace:
 
-- [Repositorio del Proyecto: Orientación Vocacional](https://github.com/Juanara21/OrientacionVocacional)
+- [Repositorio del Proyecto completo](https://github.com/Juanara21/OrientacionVocacional)
+  [Repositorio Backend Orientación Vocacional](https://github.com/Juanara21/BackEnd_OrientacionVocacional)
+  [Repositorio Frontend Orientación Vocacional](https://github.com/Juanara21/FrontEnd_OrientacionVocacional)
 ---
 
 

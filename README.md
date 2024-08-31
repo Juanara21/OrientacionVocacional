@@ -139,13 +139,13 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
-```javascript
+      ```javascript
 
-// (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
-localhost:3001/api/users/
- 
+      // (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
+      localhost:3001/api/users/
+      
 
-```
+      ```
 
 * #### `GET /api/users/user/:username`
 

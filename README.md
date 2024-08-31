@@ -145,6 +145,7 @@ localhost:3001/api/users/
  
 
 ```
+***
 #### `GET /api/users/user/:username`
 
 -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
@@ -194,6 +195,7 @@ localhost:3001/api/users/:username
  
 
 ```
+
 
 #### `PUT /api/users/user/:username`
 

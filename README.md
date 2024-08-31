@@ -543,39 +543,30 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
         ]
       }
       ```
-  2. **Inicia sesión en Vercel**
+2. **Inicia sesión en Vercel**
+   - Visita Vercel y accede a tu cuenta.
 
-    - Visita Vercel y accede a tu cuenta.
-
-  3. **Conectar tu Proyecto a tu Repositorio Git**
-
-    - Haz clic en el botón "Importar Proyecto".
-
-    - Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
-
-    - Escoge el repositorio que contiene tu proyecto Express.js.
-
-    - Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional.
+3. **Conectar tu Proyecto a tu Repositorio Git**
+   - Haz clic en el botón "Importar Proyecto".
+   - Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
+   - Escoge el repositorio que contiene tu proyecto Express.js.
+   - Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional.
 
 
-  4. **Importar tu Proyecto en Vercel**
-    - Configurar Variables de Entorno: 
+4. **Importar tu Proyecto en Vercel**
+   - Configurar Variables de Entorno: 
 
      ```javascript
         SECRET_KEY = ##clave utilizada para generar token  
         DATABASE_URL= ##Url de la base datos
              
-     ```
-       
-    - Haz clic en el botón "Deploy" para iniciar el despliegue.
+     ```       
+   - Haz clic en el botón "Deploy" para iniciar el despliegue.
         
-  5. **Acceder a tu Proyecto Desplegado**
-
-    - Ver al apartado de log, y verifica que no hay errores.
-
-    - Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación en vivo.
-
-    - Copia la URL proporcionada 
+5. **Acceder a tu Proyecto Desplegado**
+   - Ver al apartado de log, y verifica que no hay errores.
+   - Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación en vivo.
+   - Copia la URL proporcionada 
 
 ---
 ## Características 

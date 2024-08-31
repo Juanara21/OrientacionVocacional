@@ -22,7 +22,6 @@
 - [Implementación en la nube](#implementacion-en-la-nube)
 - [Arquitectura](#arquitectura)
 - [Caracteristicas](#caracteristicas)
-
 - [Autor/es](#autores)
 - [Directorio Github y Registro de cambios](#directorio-github)
 

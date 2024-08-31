@@ -170,7 +170,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
      ```
     - Ejemplo del JSON requerido.
 
-     ```javascript
+      ```javascript
 
           {
             "primer_nombre": "Juan",
@@ -183,7 +183,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
             "sexo": "M"
           }
 
-    ```
+      ```
 * #### `DELETE /api/users/:username`
 
     -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
@@ -210,7 +210,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     ```
     - Ejemplo del JSON requerido.
 
-    ```javascript
+     ```javascript
 
       {
         "oldPassword": "SecurePass1",
@@ -218,7 +218,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
       }
 
 
-    ```
+     ```
 
 
 ## [Rutas de sesion](https://adminlte.io)
@@ -236,7 +236,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     ```
     - Ejemplo del JSON requerido.
 
-    ```javascript
+     ```javascript
 
       {
         "username": "juan123",
@@ -256,7 +256,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.
 
-```javascript
+ ```javascript
 
 
 
@@ -266,7 +266,7 @@ localhost:3001/api/sesion/login
 ```
 - Ejemplo del JSON requerido.
 
-```javascript
+ ```javascript
 
 {
   "username": "juan123",
@@ -274,7 +274,7 @@ localhost:3001/api/sesion/login
 }
 
 
-```
+ ```
 
 
 

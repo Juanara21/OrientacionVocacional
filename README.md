@@ -207,7 +207,7 @@ localhost:3001/api/users/user/:username
 
 ```
 - Ejemplo del JSON requerido.
-0
+
 ```javascript
 
 {
@@ -219,18 +219,62 @@ localhost:3001/api/users/user/:username
 ```
 
 
-#### Rutas de Sesión
+### Rutas de Sesión
+
+#### `POST/api/sesion/`
+
+-Este endpoint requiere un cuerpo JSON para la solicitud.
 
 ```javascript
+
 
 // (POST) Ruta para crear un nuevo usuario (requiere auth por JWT)
 localhost:3001/api/sesion/
 
+```
+- Ejemplo del JSON requerido.
+
+```javascript
+
+{
+  "username": "juan123",
+  "password": "SecurePass1",
+  "primer_nombre": "Juan",
+  "segundo_nombre": "Carlos",
+  "primer_apellido": "Araujo",
+  "segundo_apellido": "Saucedo",
+  "email": "juan.araujo@example.com",
+  "tipo_identificacion": "Cédula",
+  "identificacion": 1234567890,
+  "sexo": "M"
+}
+
+```
+#### `POST/api/sesion/login/`
+
+-Este endpoint requiere un cuerpo JSON para la solicitud.
+
+```javascript
+
+
+
 // (POST) Ruta para iniciar sesión de un usuario (requiere auth por JWT)
 localhost:3001/api/sesion/login
 
+```
+- Ejemplo del JSON requerido.
+
+```javascript
+
+{
+  "username": "juan123",
+  "password": "SecurePass1"
+}
+
 
 ```
+
+
 
 #### Rutas de Reportes
 

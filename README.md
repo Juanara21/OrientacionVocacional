@@ -137,7 +137,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
  * #### `GET /api/users/`
 
 
--Este endpoint no requiere un cuerpo JSON para la solicitud.
+    -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
 ```javascript
 
@@ -224,7 +224,7 @@ localhost:3001/api/users/user/:username
 
 ## [Rutas de sesion](https://adminlte.io)
 
-#### `POST/api/sesion/`
+* #### `POST/api/sesion/`
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.
 
@@ -253,7 +253,7 @@ localhost:3001/api/sesion/
 }
 
 ```
-#### `POST/api/sesion/login/`
+* #### `POST/api/sesion/login/`
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.
 

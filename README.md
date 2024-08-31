@@ -132,73 +132,73 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 
 
-## [Rutas de Usuario](https://adminlte.io)
+**[Rutas de Usuario](https://adminlte.io)**
 
-#### `GET /api/users/`
-
-
--Este endpoint no requiere un cuerpo JSON para la solicitud.
-
-```javascript
-
-// (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
-localhost:3001/api/users/
- 
-
-```
-
-#### `GET /api/users/user/:username`
-
--Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
-
-```javascript
-
-// (GET) Ruta para obtener un usuario por nombre de usuario (requiere auth por JWT)
-localhost:3001/api/users/user/:username
- 
-
-```
-
-#### `PUT /api/users/user/:username`
-
--Este endpoint requiere un cuerpo JSON para la solicitud.
-
-```javascript
-
-// (PUT) Ruta para actualizar un usuario existente (requiere auth por JWT)
-localhost:3001/api/users/:username
-
-```
-- Ejemplo del JSON requerido.
-
-```javascript
-
-    {
-      "primer_nombre": "Juan",
-      "segundo_nombre": "Carlos",
-      "primer_apellido": "Araujo",
-      "segundo_apellido": "Saucedo",
-      "email": "nuevoemail@example.com",
-      "tipo_identificacion": "Cédula",
-      "identificacion": 1234567890,
-      "sexo": "M"
-    }
-
-```
-#### `DELETE /api/users/:username`
-
--Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
-
-```javascript
-
-// (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
-localhost:3001/api/users/:username
- 
-
-```
+  #### `GET /api/users/`
 
 
-#### `PUT /api/users/user/:username`
+  -Este endpoint no requiere un cuerpo JSON para la solicitud.
+
+  ```javascript
+
+  // (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
+  localhost:3001/api/users/
+  
+
+  ```
+
+  #### `GET /api/users/user/:username`
+
+  -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
+
+  ```javascript
+
+  // (GET) Ruta para obtener un usuario por nombre de usuario (requiere auth por JWT)
+  localhost:3001/api/users/user/:username
+  
+
+  ```
+
+  #### `PUT /api/users/user/:username`
+
+  -Este endpoint requiere un cuerpo JSON para la solicitud.
+
+  ```javascript
+
+  // (PUT) Ruta para actualizar un usuario existente (requiere auth por JWT)
+  localhost:3001/api/users/:username
+
+  ```
+  - Ejemplo del JSON requerido.
+
+  ```javascript
+
+      {
+        "primer_nombre": "Juan",
+        "segundo_nombre": "Carlos",
+        "primer_apellido": "Araujo",
+        "segundo_apellido": "Saucedo",
+        "email": "nuevoemail@example.com",
+        "tipo_identificacion": "Cédula",
+        "identificacion": 1234567890,
+        "sexo": "M"
+      }
+
+  ```
+  #### `DELETE /api/users/:username`
+
+  -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
+
+  ```javascript
+
+  // (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
+  localhost:3001/api/users/:username
+  
+
+  ```
+
+
+  #### `PUT /api/users/user/:username`
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.
 

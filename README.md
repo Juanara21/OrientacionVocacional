@@ -523,36 +523,40 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
 
    Crea un archivo `vercel.json` en la raíz de tu proyecto con el siguiente contenido:
 
-   ```json
-   {
-    "version": 2,
-    "builds": [
+      ```json
       {
-        "src": "src/index.ts",
-        "use": "@vercel/node",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
+        "version": 2,
+        "builds": [
+          {
+            "src": "src/index.ts",
+            "use": "@vercel/node",
+            "config": {
+              "maxLambdaSize": "50mb"
+            }
+          }
+        ],
+        "routes": [
+          {
+            "src": "/(.*)",
+            "dest": "/src/index.ts"
+          }
+        ]
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/src/index.ts"
-      }
-    ]
-  }
-  ```
+      ```
   2. **Inicia sesión en Vercel**
 
       -Visita Vercel y accede a tu cuenta.
 
   3. **Conectar tu Proyecto a tu Repositorio Git**
 
-      -Haz clic en el botón "Importar Proyecto".
-      -Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
-      -Escoge el repositorio que contiene tu proyecto Express.js.
-      -Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional
+    -Haz clic en el botón "Importar Proyecto".
+
+    -Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
+
+    -Escoge el repositorio que contiene tu proyecto Express.js.
+
+    -Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional.
+
 
   4. **Importar tu Proyecto en Vercel**
       -Configurar Variables de Entorno: 
@@ -567,9 +571,11 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
         
   5. **Acceder a tu Proyecto Desplegado**
 
-      -Ver al apartado de log, y verifica que no hay errores.
-      -Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación en vivo.
-      -Copia la URL proporcionada 
+    -Ver al apartado de log, y verifica que no hay errores.
+
+    -Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación en vivo.
+
+    -Copia la URL proporcionada 
 
 ---
 ## Características 

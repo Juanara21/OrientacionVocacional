@@ -386,7 +386,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 * #### `GET /api/career/`
 
-  - Este endpoint no requiere un cuerpo JSON para la solicitud.
+  -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
     ```javascript
     // (GET) Ruta para obtener todas las carreras (requiere auth por JWT)
@@ -395,7 +395,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 * #### `POST /api/career/`
 
-  - Este endpoint requiere un cuerpo JSON para la solicitud.
+  -Este endpoint requiere un cuerpo JSON para la solicitud.
 
     ```javascript
     // (POST) Ruta para crear una nueva carrera (requiere auth por JWT, rol: admin)
@@ -412,7 +412,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 * #### `PUT /api/career/:id`
 
-  - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el ID de la carrera que deseas actualizar.
+  -Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el ID de la carrera que deseas actualizar.
 
     ```javascript
     // (PUT) Ruta para actualizar una carrera existente (requiere auth por JWT, rol: admin)
@@ -427,18 +427,17 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     }
     ```
 
-  - Nota: Reemplaza `:id` con el ID de la carrera que deseas actualizar.
-
+  
 * #### `DELETE /api/career/:id`
 
-  - Este endpoint no requiere un cuerpo JSON para la solicitud, pero debes reemplazar `:id` en la URL con el ID de la carrera que deseas eliminar.
+  -Este endpoint no requiere un cuerpo JSON para la solicitud, pero debes reemplazar `:id` en la URL con el ID de la carrera que deseas eliminar.
 
     ```javascript
     // (DELETE) Ruta para eliminar una carrera existente (requiere auth por JWT, rol: admin)
     localhost:3001/api/career/:id
     ```
 
-  - Nota: Reemplaza `:id` con el ID de la carrera que deseas eliminar.
+ 
 
 
 ```javascript

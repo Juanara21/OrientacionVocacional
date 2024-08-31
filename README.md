@@ -128,6 +128,136 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 - Una vez que ambos servidores (backend y frontend) estén en funcionamiento, puedes acceder a la aplicación visitando `http://localhost:4200` en tu navegador.
 
 ---
+# Rutas de la API
 
+## Rutas de Usuario
+
+### `GET /api/users/`
+
+```javascript
+
+// (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
+localhost:3001/api/users/
+
+// (GET) Ruta para obtener un usuario por nombre de usuario (requiere auth por JWT)
+localhost:3001/api/users/user/:username
+
+// (PUT) Ruta para actualizar un usuario existente (requiere auth por JWT)
+localhost:3001/api/users/:username
+
+// (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
+localhost:3001/api/users/:username
+
+// (PUT) Ruta para cambiar la contraseña de un usuario (requiere auth por JWT)
+localhost:3001/api/users/user/:username
+
+```
+## Rutas de Sesión
+
+### `POST /api/sesion/`
+
+Crea un nuevo usuario.
+
+### `POST /api/sesion/login`
+
+Inicia sesión de un usuario.
+
+## Rutas de Reportes
+
+### `GET /api/reportes/`
+
+Obtiene todos los usuarios.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `GET /api/reportes/user`
+
+Obtiene usuarios sin información completa.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `GET /api/reportes/:id`
+
+Obtiene un usuario por ID.
+
+**Autorización:** Requiere token de validación.
+
+## Rutas de Preguntas
+
+### `POST /api/question/`
+
+Crea una nueva pregunta.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `PATCH /api/question/:id`
+
+Actualiza una pregunta existente.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `DELETE /api/question/:id`
+
+Elimina una pregunta existente.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `GET /api/question/`
+
+Obtiene todas las preguntas.
+
+**Autorización:** Requiere token de validación.
+
+## Rutas de Carreras
+
+### `POST /api/career/`
+
+Crea una nueva carrera.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `PUT /api/career/:id`
+
+Actualiza una carrera existente.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `DELETE /api/career/:id`
+
+Elimina una carrera existente.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `GET /api/career/`
+
+Obtiene todas las carreras.
+
+**Autorización:** Requiere token de validación.
+
+## Rutas de Respuestas
+
+### `POST /api/answer/`
+
+Crea una nueva respuesta.
+
+**Autorización:** Requiere token de validación y rol de usuario.
+
+### `PUT /api/answer/:id`
+
+Actualiza una respuesta existente.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `DELETE /api/answer/:id`
+
+Elimina una respuesta existente.
+
+**Autorización:** Requiere token de validación y rol de administrador.
+
+### `GET /api/answer/`
+
+Obtiene todas las respuestas.
+
+**Autorización:** Requiere token de validación.
 
 

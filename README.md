@@ -132,10 +132,10 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 
 
-### [Rutas de Usuario](https://adminlte.io)
+## [Rutas de Usuario](https://adminlte.io)
 
 #### `GET /api/users/`
-...
+
 
 -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
@@ -222,7 +222,7 @@ localhost:3001/api/users/user/:username
 ```
 
 
-### [Rutas de sesion](https://adminlte.io)
+## [Rutas de sesion](https://adminlte.io)
 
 #### `POST/api/sesion/`
 

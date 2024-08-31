@@ -591,7 +591,7 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
    - Haz clic en el botón "Importar Proyecto".
    - Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
    - Escoge el repositorio que contiene tu proyecto Express.js.
-   - Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional.
+   - Luego escoge la ruta del backend ./Frontend_OrientacionVocacional.
 
 
 3. **Importar tu Proyecto en Vercel**

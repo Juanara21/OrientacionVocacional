@@ -60,7 +60,7 @@ export const getUnUsers = async (req: Request, res: Response) => {
   } catch (error) {
     // Maneja el error de consulta
     console.error(error);
-    res.status(500).json({ error: 'Error en la consulta de usuarios.' });
+    res.status(500).json({ error: 'Error en la consulta de usuario.' });
   }
 };
 
@@ -104,7 +104,7 @@ export const getIDUsers = async (req: Request, res: Response) => {
   } catch (error) {
     // Maneja el error de consulta
     console.error(error);
-    res.status(500).json({ error: 'Error en la consulta de usuarios.' });
+    res.status(500).json({ error: 'Error en la consulta de usuarios ID.' });
   }
 };
 

@@ -5,11 +5,11 @@ import { Request, Response } from 'express';
 export const getUsers = async (req: Request, res: Response) => {
   try {
     const query = `
-    SELECT u.id AS usuario_id, u.primer_nombre, u.primer_apellido, c.career AS  Carrera, SUM(r.valor) AS afinidad
-    FROM Users u
-    INNER JOIN Answers r ON u.id = r.UserId
-    INNER JOIN Questions q ON r.QuestionId = q.id
-    INNER JOIN Careers c ON q.CareerId = c.id
+    SELECT u.id AS usuario_id, u.primer_nombre, u.primer_apellido, c.career AS Carrera, SUM(r.valor) AS afinidad
+    FROM "Users" u
+    INNER JOIN "Answers" r ON u.id = r."UserId"
+    INNER JOIN "Questions" q ON r."QuestionId" = q.id
+    INNER JOIN "Careers" c ON q."CareerId" = c.id
     GROUP BY u.id, c.id
     ORDER BY u.id, afinidad DESC;
     `;
@@ -29,28 +29,28 @@ export const getUnUsers = async (req: Request, res: Response) => {
   try {
     const query = `
     SELECT t.id_usuario, t.primer_nombre, u.primer_apellido, t.carrera, t.afinidad
-    FROM (
-      SELECT u.id as id_usuario, u.primer_nombre, c.career as carrera, SUM(a.valor) as afinidad
-      FROM Users u
-      INNER JOIN Answers a ON u.id = a.UserId
-      INNER JOIN Questions q ON a.QuestionId = q.id
-      INNER JOIN Careers c ON q.CareerId = c.id
-      GROUP BY u.id, c.id
-    ) AS t
-    INNER JOIN (
-      SELECT usuario_id, MAX(afinidad) AS max_afinidad
-      FROM (
-        SELECT u.id as usuario_id, c.id as carrera_id, SUM(a.valor) as afinidad
-        FROM Users u
-        INNER JOIN Answers a ON u.id = a.UserId
-        INNER JOIN Questions q ON a.QuestionId = q.id
-        INNER JOIN Careers c ON q.CareerId = c.id
-        GROUP BY u.id, c.id
-      ) AS t1
-      GROUP BY usuario_id
-    ) AS t2 ON t.id_usuario = t2.usuario_id AND t.afinidad = t2.max_afinidad
-    INNER JOIN Users u ON t.id_usuario = u.id
-    ORDER BY t.id_usuario;
+FROM (
+  SELECT u.id as id_usuario, u.primer_nombre, c."career" as carrera, SUM(a.valor) as afinidad
+  FROM "Users" u
+  INNER JOIN "Answers" a ON u.id = a."UserId"
+  INNER JOIN "Questions" q ON a."QuestionId" = q.id
+  INNER JOIN "Careers" c ON q."CareerId" = c.id
+  GROUP BY u.id, c.id
+) AS t
+INNER JOIN (
+  SELECT usuario_id, MAX(afinidad) AS max_afinidad
+  FROM (
+    SELECT u.id as usuario_id, c.id as carrera_id, SUM(a.valor) as afinidad
+    FROM "Users" u
+    INNER JOIN "Answers" a ON u.id = a."UserId"
+    INNER JOIN "Questions" q ON a."QuestionId" = q.id
+    INNER JOIN "Careers" c ON q."CareerId" = c.id
+    GROUP BY u.id, c.id
+  ) AS t1
+  GROUP BY usuario_id
+) AS t2 ON t.id_usuario = t2.usuario_id AND t.afinidad = t2.max_afinidad
+INNER JOIN "Users" u ON t.id_usuario = u.id
+ORDER BY t.id_usuario;
     `;
 
     const users = await sequelize.query(query, { type: QueryTypes.SELECT });
@@ -69,29 +69,29 @@ export const getIDUsers = async (req: Request, res: Response) => {
   try {
     const query = `
     SELECT t.id_usuario, t.primer_nombre, u.primer_apellido, t.carrera, t.afinidad
-    FROM (
-      SELECT u.id as id_usuario, u.primer_nombre, c.career as carrera, SUM(a.valor) as afinidad
-      FROM Users u
-      INNER JOIN Answers a ON u.id = a.UserId
-      INNER JOIN Questions q ON a.QuestionId = q.id
-      INNER JOIN Careers c ON q.CareerId = c.id
-      WHERE u.id = :userId  -- Aquí se agrega la condición para el ID de usuario
-      GROUP BY u.id, c.id
-    ) AS t
-    INNER JOIN (
-      SELECT usuario_id, MAX(afinidad) AS max_afinidad
-      FROM (
-        SELECT u.id as usuario_id, c.id as carrera_id, SUM(a.valor) as afinidad
-        FROM Users u
-        INNER JOIN Answers a ON u.id = a.UserId
-        INNER JOIN Questions q ON a.QuestionId = q.id
-        INNER JOIN Careers c ON q.CareerId = c.id
-        GROUP BY u.id, c.id
-      ) AS t1
-      GROUP BY usuario_id
-    ) AS t2 ON t.id_usuario = t2.usuario_id AND t.afinidad = t2.max_afinidad
-    INNER JOIN Users u ON t.id_usuario = u.id
-    ORDER BY t.id_usuario;
+FROM (
+  SELECT u.id as id_usuario, u.primer_nombre, c."career" as carrera, SUM(a.valor) as afinidad
+  FROM "Users" u
+  INNER JOIN "Answers" a ON u.id = a."UserId"
+  INNER JOIN "Questions" q ON a."QuestionId" = q.id
+  INNER JOIN "Careers" c ON q."CareerId" = c.id
+  WHERE u.id = :userId  -- Aquí se agrega la condición para el ID de usuario
+  GROUP BY u.id, c.id
+) AS t
+INNER JOIN (
+  SELECT usuario_id, MAX(afinidad) AS max_afinidad
+  FROM (
+    SELECT u.id as usuario_id, c.id as carrera_id, SUM(a.valor) as afinidad
+    FROM "Users" u
+    INNER JOIN "Answers" a ON u.id = a."UserId"
+    INNER JOIN "Questions" q ON a."QuestionId" = q.id
+    INNER JOIN "Careers" c ON q."CareerId" = c.id
+    GROUP BY u.id, c.id
+  ) AS t1
+  GROUP BY usuario_id
+) AS t2 ON t.id_usuario = t2.usuario_id AND t.afinidad = t2.max_afinidad
+INNER JOIN "Users" u ON t.id_usuario = u.id
+ORDER BY t.id_usuario;
     `;
 
     const users = await sequelize.query(query, {

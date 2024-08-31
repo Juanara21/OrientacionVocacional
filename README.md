@@ -134,92 +134,89 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 ### [Rutas de Usuario](https://adminlte.io)
 
-  #### `GET /api/users/`
+#### `GET /api/users/`
 
-      -Este endpoint no requiere un cuerpo JSON para la solicitud.
+-Este endpoint no requiere un cuerpo JSON para la solicitud.
 
-      ```javascript
+```javascript
 
-      // (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
-      localhost:3001/api/users/
-      
+// (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
+localhost:3001/api/users/
+ 
 
-      ```
+```
+#### `GET /api/users/user/:username`
 
+-Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
 
-  #### `GET /api/users/user/:username`
+```javascript
 
-      -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
+// (GET) Ruta para obtener un usuario por nombre de usuario (requiere auth por JWT)
+localhost:3001/api/users/user/:username
+ 
 
-      ```javascript
+```
 
-      // (GET) Ruta para obtener un usuario por nombre de usuario (requiere auth por JWT)
-      localhost:3001/api/users/user/:username
-      
+#### `PUT /api/users/user/:username`
 
-      ```
+-Este endpoint requiere un cuerpo JSON para la solicitud.
 
+```javascript
 
-  #### `PUT /api/users/user/:username`
+// (PUT) Ruta para actualizar un usuario existente (requiere auth por JWT)
+localhost:3001/api/users/:username
 
-      -Este endpoint requiere un cuerpo JSON para la solicitud.
+```
+- Ejemplo del JSON requerido.
 
-      ```javascript
+```javascript
 
-      // (PUT) Ruta para actualizar un usuario existente (requiere auth por JWT)
-      localhost:3001/api/users/:username
+    {
+      "primer_nombre": "Juan",
+      "segundo_nombre": "Carlos",
+      "primer_apellido": "Araujo",
+      "segundo_apellido": "Saucedo",
+      "email": "nuevoemail@example.com",
+      "tipo_identificacion": "Cédula",
+      "identificacion": 1234567890,
+      "sexo": "M"
+    }
 
-      ```
-      - Ejemplo del JSON requerido.
+```
+#### `DELETE /api/users/:username`
 
-      ```javascript
+-Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
 
-          {
-            "primer_nombre": "Juan",
-            "segundo_nombre": "Carlos",
-            "primer_apellido": "Araujo",
-            "segundo_apellido": "Saucedo",
-            "email": "nuevoemail@example.com",
-            "tipo_identificacion": "Cédula",
-            "identificacion": 1234567890,
-            "sexo": "M"
-          }
+```javascript
 
-      ```
-   #### `DELETE /api/users/:username`
+// (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
+localhost:3001/api/users/:username
+ 
 
-      -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
+```
 
-      ```javascript
+#### `PUT /api/users/user/:username`
 
-      // (DELETE) Ruta para eliminar un usuario (requiere auth por JWT, rol: admin)
-      localhost:3001/api/users/:username
-      
+-Este endpoint requiere un cuerpo JSON para la solicitud.
 
-      ```
-
-   #### `PUT /api/users/user/:username`
-
-      -Este endpoint requiere un cuerpo JSON para la solicitud.
-
-      ```javascript
+```javascript
 
 
-      // (PUT) Ruta para cambiar la contraseña de un usuario (requiere auth por JWT)
-      localhost:3001/api/users/user/:username
+// (PUT) Ruta para cambiar la contraseña de un usuario (requiere auth por JWT)
+localhost:3001/api/users/user/:username
 
-      ```
-      - Ejemplo del JSON requerido.
+```
+- Ejemplo del JSON requerido.
 
-      ```javascript
+```javascript
 
-      {
-        "oldPassword": "SecurePass1",
-        "newPassword": "NewSecurePass2"
-      }
+{
+  "oldPassword": "SecurePass1",
+  "newPassword": "NewSecurePass2"
+}
 
 
-      ```
+```
 
 
 ### [Rutas de sesion](https://adminlte.io)

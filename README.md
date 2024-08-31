@@ -6,6 +6,8 @@
 <p align="center">interfaz principal de la herramienta</p>
 <p align="center"><img src="https://media.licdn.com/dms/image/v2/D4E22AQEEjg16MlSDNA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1686881680355?e=1727913600&v=beta&t=37W_ulk93fDGGEmIzr9U04XG-buZI_pW5ri6ixTwCbc"/></p> 
 <p>IMPORTANTE! El primero usuario administrador es credo por default, pero esta sugeto a su modificación. Username: Administration Password: defaultPassword</p>
+
+
 ---
 
 ## Tabla de contenidos:

@@ -14,8 +14,9 @@
 - [Instalación](#instalación)
 - [Como empezar](#como-empezar)
 - [API y Rutas](#api-y-rutas)
-- [Caracteristicas](#caracteristicas)
+
 - [Arquitectura](#arquitectura)
+- [Caracteristicas](#caracteristicas)
 - [Implementación en la nube](#implementacion-en-la-nube)
 - [Autor/es](#autores)
 - [Directorio Github](#directorio-github)
@@ -494,7 +495,31 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     // (DELETE) Ruta para eliminar una respuesta existente (requiere auth por JWT, rol: admin)
     localhost:3001/api/answer/:id
     ```
+---
+## Características Principales
+- Gestión de usuarios con roles de administrador y usuarios regulares.
+- Creación y administración de preguntas y carreras profesionales.
+- Test de orientación vocacional con resultados personalizados.
+- Backend RESTful API con autenticación JWT.
+- Frontend interactivo y amigable desarrollado en Angular.
 
+---
+## Autor/es
+
+Este proyecto fue desarrollado por:
+
+- **Juan Araujo Saucedo**  
+  [Perfil en GitHub](https://github.com/Juanara21)  
+  [Portafolio Web](https://juanaraujo.netlify.app/)
+  [Perfil en LinkedIn](www.linkedin.com/in/juan-junior-araujo-saucedo-29447514a)
+
+---
+## Directorio GitHub
+
+Puedes encontrar el repositorio del proyecto en GitHub en el siguiente enlace:
+
+- [Repositorio del Proyecto: Orientación Vocacional](https://github.com/Juanara21/OrientacionVocacional)
+---
 
 
 

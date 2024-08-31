@@ -134,7 +134,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 ### [Rutas de Usuario](https://adminlte.io)
 
-#### `GET /api/users/`
+1. **`GET /api/users/`**
 
 -Este endpoint no requiere un cuerpo JSON para la solicitud.
 

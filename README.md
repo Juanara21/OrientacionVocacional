@@ -210,15 +210,15 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     ```
     - Ejemplo del JSON requerido.
 
-     ```javascript
+      ```javascript
 
-      {
-        "oldPassword": "SecurePass1",
-        "newPassword": "NewSecurePass2"
-      }
+        {
+          "oldPassword": "SecurePass1",
+          "newPassword": "NewSecurePass2"
+        }
 
 
-     ```
+      ```
 
 
 ## [Rutas de sesion](https://adminlte.io)
@@ -236,22 +236,22 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     ```
     - Ejemplo del JSON requerido.
 
-     ```javascript
+      ```javascript
 
-      {
-        "username": "juan123",
-        "password": "SecurePass1",
-        "primer_nombre": "Juan",
-        "segundo_nombre": "Carlos",
-        "primer_apellido": "Araujo",
-        "segundo_apellido": "Saucedo",
-        "email": "juan.araujo@example.com",
-        "tipo_identificacion": "Cédula",
-        "identificacion": 1234567890,
-        "sexo": "M"
-      }
+        {
+          "username": "juan123",
+          "password": "SecurePass1",
+          "primer_nombre": "Juan",
+          "segundo_nombre": "Carlos",
+          "primer_apellido": "Araujo",
+          "segundo_apellido": "Saucedo",
+          "email": "juan.araujo@example.com",
+          "tipo_identificacion": "Cédula",
+          "identificacion": 1234567890,
+          "sexo": "M"
+        }
 
-    ```
+      ```
 * #### `POST/api/sesion/login/`
 
 -Este endpoint requiere un cuerpo JSON para la solicitud.
@@ -266,15 +266,15 @@ localhost:3001/api/sesion/login
 ```
 - Ejemplo del JSON requerido.
 
- ```javascript
+  ```javascript
 
-{
-  "username": "juan123",
-  "password": "SecurePass1"
-}
+  {
+    "username": "juan123",
+    "password": "SecurePass1"
+  }
 
 
- ```
+  ```
 
 
 

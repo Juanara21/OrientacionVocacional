@@ -160,7 +160,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 * #### `PUT /api/users/user/:username`
 
-    -Este endpoint requiere un cuerpo JSON para la solicitud.
+    -Este endpoint requiere un cuerpo JSON para la solicitud y `:username` en la URL con el nombre de usuario que deseas actualizar.
 
      ```javascript
 
@@ -317,23 +317,68 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 
 
-#### Rutas de Preguntas
+## [Rutas de Preguntas](https://adminlte.io)
 
-```javascript
+  * #### `GET/api/question/`
 
-// (POST) Ruta para crear una nueva pregunta (requiere auth por JWT, rol: admin)
-localhost:3001/api/question/
 
-// (PATCH) Ruta para actualizar una pregunta existente (requiere auth por JWT, rol: admin)
-localhost:3001/api/question/:id
+      -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
-// (DELETE) Ruta para eliminar una pregunta existente (requiere auth por JWT, rol: admin)
-localhost:3001/api/question/:id
+        ```javascript
 
-// (GET) Ruta para obtener todas las preguntas (requiere auth por JWT)
-localhost:3001/api/question/
+        // (GET) Ruta para obtener todas las preguntas (requiere auth por JWT)
+        localhost:3001/api/question/    
 
-```
+        ```
+  * #### `POST/api/question/`
+
+      -Este endpoint requiere un cuerpo JSON para la solicitud.
+
+      ```javascript
+
+
+        // (POST) Ruta para crear una nueva pregunta (requiere auth por JWT, rol: admin)
+        localhost:3001/api/question/
+
+      ```
+      - Ejemplo del JSON requerido.
+
+        ```javascript
+
+          {
+            "descripcion": "¿Cuál es la capital de Francia?",
+            "CareerId": 1
+          }
+
+        ```      
+
+  * #### `DELETE /api/question/:id`
+
+      -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:id` en la URL con el id de la pregunta que deseas eliminar.
+
+        ```javascript
+        // (DELETE) Ruta para eliminar una pregunta existente (requiere auth por JWT, rol: admin)
+        localhost:3001/api/question/:id
+        ```
+  * #### `PATCH /api/question/:id`
+
+      - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el id de la pregunta que deseas actualizar..
+
+        ```javascript
+        // (PATCH) Ruta para actualizar una pregunta existente (requiere auth por JWT, rol: admin)
+        localhost:3001/api/question/:id
+        ```
+
+        - Ejemplo del JSON requerido.
+
+          ```json
+          {
+            "descripcion": "¿Cuál es la capital de Italia?",
+            "CareerId": 2
+          }
+          ```
+
+
 
 
 #### Rutas de Carreras

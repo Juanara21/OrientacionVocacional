@@ -14,7 +14,7 @@ export class ReportesService {
   private myApiUrl: string;
 
   constructor(private http: HttpClient) {
-    this.myAppUrl =   'http://localhost:3001/';
+    this.myAppUrl =   'https://backorientacionvocacional.vercel.app/';
     this.myApiUrl = 'api/reportes/';
    }
    

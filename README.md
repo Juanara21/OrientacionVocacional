@@ -132,7 +132,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
 
 
-### Rutas de Usuario
+### [Rutas de Usuario](https://adminlte.io)
 
 #### `GET /api/users/`
 
@@ -219,7 +219,7 @@ localhost:3001/api/users/user/:username
 ```
 
 
-### Rutas de Sesión
+### [Rutas de sesion](https://adminlte.io)
 
 #### `POST/api/sesion/`
 

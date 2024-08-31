@@ -514,11 +514,11 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
 
   ### Pasos para el Despliegue
 
-   #### Backend
+   ## Backend
         
-  - Verifica que el proyecto este bien configurado y ejecute de manera correcta en el entorno local. 
+    - Verifica que el proyecto este bien configurado y ejecute de manera correcta en el entorno local. 
 
-  - Asegúrate de tener un archivo `.gitignore` en la raíz para excluir archivos innecesarios del control de versiones.
+    - Asegúrate de tener un archivo `.gitignore` en la raíz para excluir archivos innecesarios del control de versiones.
 
   1. **Crear el archivo `vercel.json`:**
 

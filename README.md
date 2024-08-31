@@ -437,44 +437,66 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     localhost:3001/api/career/:id
     ```
 
+ ## [Rutas de Respuestas](https://adminlte.io)
+
+* #### `GET /api/answer/`
+
+  -Este endpoint no requiere un cuerpo JSON para la solicitud.
+
+    ```javascript
+    // (GET) Ruta para obtener todas las respuestas (requiere auth por JWT)
+    localhost:3001/api/answer/
+    ```
+
+* #### `POST /api/answer/`
+
+  -Este endpoint requiere un cuerpo JSON para la solicitud.
+
+    ```javascript
+    // (POST) Ruta para crear una nueva respuesta (requiere auth por JWT, rol: user)
+    localhost:3001/api/answer/
+    ```
+
+  - Ejemplo del JSON requerido.
+
+    ```json
+    {
+      "valor": "Respuesta correcta",
+      "UserId": 1,
+      "QuestionId": 1
+    }
+    ```
+
+* #### `PUT /api/answer/:id`
+
+  -Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el ID de la respuesta que deseas actualizar.
+
+    ```javascript
+    // (PUT) Ruta para actualizar una respuesta existente (requiere auth por JWT, rol: admin)
+    localhost:3001/api/answer/:id
+    ```
+
+  - Ejemplo del JSON requerido.
+
+    ```json
+    {
+      "valor": "Respuesta actualizada"
+    }
+    ```
+
  
 
+* #### `DELETE /api/answer/:id`
 
-```javascript
+  -Este endpoint no requiere un cuerpo JSON para la solicitud, pero debes reemplazar `:id` en la URL con el ID de la respuesta que deseas eliminar.
 
-// (POST) Ruta para crear una nueva carrera (requiere auth por JWT, rol: admin)
-localhost:3001/api/career/
-
-// (PUT) Ruta para actualizar una carrera existente (requiere auth por JWT, rol: admin)
-localhost:3001/api/career/:id
-
-// (DELETE) Ruta para eliminar una carrera existente (requiere auth por JWT, rol: admin)
-localhost:3001/api/career/:id
-
-// (GET) Ruta para obtener todas las carreras (requiere auth por JWT)
-localhost:3001/api/career/
+    ```javascript
+    // (DELETE) Ruta para eliminar una respuesta existente (requiere auth por JWT, rol: admin)
+    localhost:3001/api/answer/:id
+    ```
 
 
-```
 
-#### Rutas de Respuestas
-
-```javascript
-
-// (POST) Ruta para crear una nueva respuesta (requiere auth por JWT, rol: user)
-localhost:3001/api/answer/
-
-// (PUT) Ruta para actualizar una respuesta existente (requiere auth por JWT, rol: admin)
-localhost:3001/api/answer/:id
-
-// (DELETE) Ruta para eliminar una respuesta existente (requiere auth por JWT, rol: admin)
-localhost:3001/api/answer/:id
-
-// (GET) Ruta para obtener todas las respuestas (requiere auth por JWT)
-localhost:3001/api/answer/
-
-
-```
 
 
 

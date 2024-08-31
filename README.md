@@ -364,19 +364,19 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el id de la pregunta que deseas actualizar..
 
-        ```javascript
+     ```javascript
         // (PATCH) Ruta para actualizar una pregunta existente (requiere auth por JWT, rol: admin)
         localhost:3001/api/question/:id
-        ```
+     ```
 
-        - Ejemplo del JSON requerido.
+     - Ejemplo del JSON requerido.
 
-          ```json
+      ```json
           {
             "descripcion": "¿Cuál es la capital de Italia?",
             "CareerId": 2
           }
-          ```  
+      ```  
 
 
 

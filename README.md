@@ -502,13 +502,15 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 - Test de orientación vocacional con resultados personalizados.
 - Backend RESTful API con autenticación JWT.
 - Frontend interactivo y amigable desarrollado en Angular.
+- Proteccion y de rutas con validación de token JWT Y Rol de usuario.
+- Frontend responsivo para ajustarse a cualquier dispositivo.
 
 ---
 ## Autor/es
 
 Este proyecto fue desarrollado por:
 
-- **Juan Araujo Saucedo**  
+- **Juan Junior Araujo Saucedo**  
   [Perfil en GitHub](https://github.com/Juanara21)  
   [Portafolio Web](https://juanaraujo.netlify.app/)
   [Perfil en LinkedIn](https://www.linkedin.com/in/juan-junior-araujo-saucedo-29447514a)
@@ -519,8 +521,11 @@ Este proyecto fue desarrollado por:
 Puedes encontrar el repositorio del proyecto en GitHub en el siguiente enlace:
 
 - [Repositorio del Proyecto completo](https://github.com/Juanara21/OrientacionVocacional)
-  [Repositorio Backend Orientación Vocacional](https://github.com/Juanara21/BackEnd_OrientacionVocacional)
-  [Repositorio Frontend Orientación Vocacional](https://github.com/Juanara21/FrontEnd_OrientacionVocacional)
+
+Si deseas ver indiviadualmente registros de cambios en desarrollo del backend y frontend, aqui estan los enlaces:
+
+- [Repositorio Backend Orientación Vocacional](https://github.com/Juanara21/BackEnd_OrientacionVocacional)
+- [Repositorio Frontend Orientación Vocacional](https://github.com/Juanara21/FrontEnd_OrientacionVocacional)
 ---
 
 

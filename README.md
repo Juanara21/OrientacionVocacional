@@ -254,27 +254,27 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
       ```
 * #### `POST/api/sesion/login/`
 
--Este endpoint requiere un cuerpo JSON para la solicitud.
+    -Este endpoint requiere un cuerpo JSON para la solicitud.
 
- ```javascript
-
-
-
-// (POST) Ruta para iniciar sesión de un usuario (requiere auth por JWT)
-localhost:3001/api/sesion/login
-
-```
-- Ejemplo del JSON requerido.
-
-  ```javascript
-
-  {
-    "username": "juan123",
-    "password": "SecurePass1"
-  }
+    ```javascript
 
 
-  ```
+
+    // (POST) Ruta para iniciar sesión de un usuario (requiere auth por JWT)
+    localhost:3001/api/sesion/login
+
+    ```
+    - Ejemplo del JSON requerido.
+
+      ```javascript
+
+      {
+        "username": "juan123",
+        "password": "SecurePass1"
+      }
+
+
+      ```
 
 
 

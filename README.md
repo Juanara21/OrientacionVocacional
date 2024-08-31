@@ -145,6 +145,8 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
       
 
       ```
+
+
   #### `GET /api/users/user/:username`
 
       -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
@@ -157,7 +159,8 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
       ```
 
-    #### `PUT /api/users/user/:username`
+
+  #### `PUT /api/users/user/:username`
 
       -Este endpoint requiere un cuerpo JSON para la solicitud.
 
@@ -183,7 +186,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
           }
 
       ```
-    #### `DELETE /api/users/:username`
+   #### `DELETE /api/users/:username`
 
       -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
 
@@ -195,7 +198,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
       ```
 
-    #### `PUT /api/users/user/:username`
+   #### `PUT /api/users/user/:username`
 
       -Este endpoint requiere un cuerpo JSON para la solicitud.
 

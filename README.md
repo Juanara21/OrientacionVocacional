@@ -322,14 +322,14 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
   * #### `GET/api/question/`
 
 
-      -Este endpoint no requiere un cuerpo JSON para la solicitud.
+     -Este endpoint no requiere un cuerpo JSON para la solicitud.
 
-        ```javascript
+      ```javascript
 
         // (GET) Ruta para obtener todas las preguntas (requiere auth por JWT)
         localhost:3001/api/question/    
 
-        ```
+       ``` 
   * #### `POST/api/question/`
 
       -Este endpoint requiere un cuerpo JSON para la solicitud.
@@ -356,13 +356,13 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
       -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:id` en la URL con el id de la pregunta que deseas eliminar.
 
-        ```javascript
+       ```javascript
         // (DELETE) Ruta para eliminar una pregunta existente (requiere auth por JWT, rol: admin)
         localhost:3001/api/question/:id
-        ```
+      ```
   * #### `PATCH /api/question/:id`
 
-      - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el id de la pregunta que deseas actualizar..
+    - Este endpoint requiere un cuerpo JSON para la solicitud y `:id` en la URL con el id de la pregunta que deseas actualizar..
 
         ```javascript
         // (PATCH) Ruta para actualizar una pregunta existente (requiere auth por JWT, rol: admin)
@@ -376,7 +376,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
             "descripcion": "¿Cuál es la capital de Italia?",
             "CareerId": 2
           }
-          ```
+          ```  
 
 
 

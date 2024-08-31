@@ -17,7 +17,7 @@ if (!DB_NAME || !DB_USER || !DB_PASSWORD || !DB_HOST) {
 
 const sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
     // host: DB_HOST,
-    dialect: 'mysql',
+    dialect: 'postgres',
     dialectOptions: {
       ssl: {
         require: true,

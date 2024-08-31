@@ -26,6 +26,7 @@ const {
   const sequelize = new Sequelize(DATABASE_URL, {
     
     dialect: 'postgres',
+    dialectModule: pg,
     dialectOptions: {
       ssl: {
         require: true,

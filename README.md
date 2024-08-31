@@ -142,8 +142,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
       ```javascript
 
       // (GET) Ruta para obtener todos los usuarios (requiere auth por JWT)
-      localhost:3001/api/users/
-      
+      localhost:3001/api/users/     
 
       ```
 
@@ -151,13 +150,13 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
 
     -Este endpoint no requiere un cuerpo JSON para la solicitud, pero si remplazar `:username` en la URL con el nombre de usuario que deseas buscar.
 
-      ```javascript
+     ```javascript
 
       // (GET) Ruta para obtener un usuario por nombre de usuario (requiere auth por JWT)
       localhost:3001/api/users/user/:username
       
 
-      ```
+     ```
 
 * #### `PUT /api/users/user/:username`
 

@@ -500,7 +500,7 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     localhost:3001/api/answer/:id
     ```
 ---
-## Implementación en vercel
+## Implementación en la nube con Vercel
 
 Esta guía te conducirá a través del proceso de desplegar tu proyecto backend con Express.js y tu proyecto frontend en Angular en Vercel, una plataforma en la nube destacada por su interfaz intuitiva y sus potentes funciones de despliegue. Puedes ver la documentacion oficial desde [Vercel Official site](https://vercel.com/guides/using-express-with-vercel)
 
@@ -511,6 +511,7 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
   - Un proyecto clonado y alojado en un repositorio Git (por ejemplo, GitHub).
   - Node.js instalado en tu máquina local.
   - Una [cuenta de Vercel](https://vercel.com/). Si aún no tienes una, regístrate en [Vercel](https://vercel.com/).
+  - Credenciales de una base de datos Postgress, si no tienes una, creala en [Vercel](https://vercel.com/), consulta la documentación
 
   ### Pasos para el Despliegue
 
@@ -583,6 +584,22 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
           this.myApiUrl = 'api/career/';
       }
    ```  
+1. **Inicia sesión en Vercel**
+   - Visita Vercel y accede a tu cuenta.
+
+2. **Conectar tu Proyecto a tu Repositorio Git**
+   - Haz clic en el botón "Importar Proyecto".
+   - Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
+   - Escoge el repositorio que contiene tu proyecto Express.js.
+   - Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional.
+
+
+3. **Importar tu Proyecto en Vercel**
+   - Haz clic en el botón "Deploy" para iniciar el despliegue.
+        
+4. **Acceder a tu Proyecto Desplegado**
+   - Ver al apartado de build, y verifica que no hay errores.
+   - Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación funcionando.
 
 
 

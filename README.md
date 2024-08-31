@@ -500,6 +500,77 @@ Una vez que hayas clonado el repositorio y cumplido con los requisitos previos, 
     localhost:3001/api/answer/:id
     ```
 ---
+## Implementación en vercel
+
+Esta guía te conducirá a través del proceso de desplegar tu proyecto backend con Express.js y tu proyecto frontend en Angular en Vercel, una plataforma en la nube destacada por su interfaz intuitiva y sus potentes funciones de despliegue. Puedes ver la documentacion oficial desde [Vercel Official site](https://vercel.com/guides/using-express-with-vercel)
+
+  ### Requisitos Previos
+
+  Antes de comenzar, asegúrate de tener:
+
+  - Un proyecto clonado y alojado en un repositorio Git (por ejemplo, GitHub).
+  - Node.js instalado en tu máquina local.
+  - Una [cuenta de Vercel](https://vercel.com/). Si aún no tienes una, regístrate en [Vercel](https://vercel.com/).
+
+  ### Pasos para el Despliegue
+
+    #### Backend
+      
+    - Verifica que el proyecto este bien configurado y ejecute de manera correcta en el entorno local. 
+    - Asegúrate de tener un archivo `.gitignore` en la raíz para excluir archivos innecesarios del control de versiones.
+
+    1. **Crear el archivo `vercel.json`:**
+
+   Crea un archivo `vercel.json` en la raíz de tu proyecto con el siguiente contenido:
+
+   ```json
+   {
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/index.ts",
+        "use": "@vercel/node",
+        "config": {
+          "maxLambdaSize": "50mb"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/src/index.ts"
+      }
+    ]
+  }
+  ```
+   1. **Inicia sesión en Vercel**
+
+      -Visita Vercel y accede a tu cuenta.
+
+   2. **Conectar tu Proyecto a tu Repositorio Git**
+
+      -Haz clic en el botón "Importar Proyecto".
+      -Selecciona tu proveedor de Git (por ejemplo, GitHub) y autentica tu cuenta si se te solicita.
+      -Escoge el repositorio que contiene tu proyecto Express.js.
+      -Luego escoge la ruta del backend ./BackEnd_OrientacionVocacional
+
+   3. **Importar tu Proyecto en Vercel**
+      -Configurar Variables de Entorno: 
+       ```json
+       
+              SECRET_KEY = ##clave utilizada para generar token  
+              DATABASE_URL= ##Url de la base datos
+      ```
+       
+      -Haz clic en el botón "Deploy" para iniciar el despliegue.
+        
+    4. **Acceder a tu Proyecto Desplegado**
+
+      -Ver al apartado de log, y verifica que no hay errores.
+      -Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación en vivo.
+      -Copia la URL proporcionada 
+
+---
 ## Características 
 - Gestión de usuarios con roles de administrador y usuarios regulares.
 - Creación y administración de preguntas y carreras profesionales.

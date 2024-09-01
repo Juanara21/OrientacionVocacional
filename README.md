@@ -7,6 +7,7 @@
 <p align="center"><img src="https://media.licdn.com/dms/image/v2/D4E22AQEEjg16MlSDNA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1686881680355?e=1727913600&v=beta&t=37W_ulk93fDGGEmIzr9U04XG-buZI_pW5ri6ixTwCbc"/></p> 
 <p>IMPORTANTE! El primero usuario administrador es credo por default, pero esta sujeto a su modificación. </p>
 
+`URL:` https://frontendorientacionvocacional.vercel.app/
 `Username:` Administration
 `Password:` defaultPassword
 
@@ -600,10 +601,34 @@ Esta guía te conducirá a través del proceso de desplegar tu proyecto backend 
 4. **Acceder a tu Proyecto Desplegado**
    - Ver al apartado de build, y verifica que no hay errores.
    - Visita la URL proporcionada por Vercel en tu navegador para ver tu aplicación funcionando.
-
-
-
 ---
+## Arquitectura
+
+La arquitectura de la aplicación se basa en un enfoque de cliente-servidor con una API RESTful para la comunicación entre el frontend y el backend. Esta arquitectura permite una separación clara entre la interfaz de usuario y la lógica de negocio, facilitando la escalabilidad y el mantenimiento de la aplicación.
+
+### Componentes Clave
+
+#### Frontend
+
+- **Tecnologías**:Implementado utilizando tecnologías como Angular, Angular Material, Bootstrap, con lenguajes de programación, de etiqutas y de estilo como son: `Typescript`, `HTML` Y `CSS` .
+- **Función**: El frontend realiza solicitudes al backend a través de la API RESTful y muestra los datos al usuario. Los datos se intercambian en formato JSON.
+
+#### Backend
+
+- **Tecnologías**: Implementado utilizando tecnologías como Node.js y su framework Express.js en lenguaje  `Typescript`. 
+- **Función**: El backend es responsable de manejar la lógica de negocio, gestionar la base de datos y procesar las solicitudes provenientes del frontend, expone una API RESTful con rutas específicas para permitir la comunicación con el frontend. Responde a las solicitudes con datos en formato JSON y realiza operaciones como crear, leer, actualizar y eliminar datos.
+
+#### API RESTful
+
+- **Descripción**: La API RESTful actúa como el intermediario entre el frontend y el backend, siguiendo los principios de REST (Representational State Transfer).
+- **Rutas**: Define endpoints HTTP (GET, POST, PUT, DELETE) para manejar diferentes operaciones. Por ejemplo, `/api/users` para obtener una lista de usuarios, `/api/users/{id}` para obtener detalles de un usuario específico, etc.
+- **Formato de Datos**: Las solicitudes y respuestas se envían en formato JSON, lo que permite una comunicación estructurada y fácil de interpretar entre el frontend y el backend.
+
+#### Diagrama de la arquitectura de software.
+
+<p align="center"><img src="https://www.canva.com/design/DAF7H9kZwW8/bBOc1-ypVDMQ7ZI_NDBFug/view"/></p> 
+---
+
 ## Características 
 - Gestión de usuarios con roles de administrador y usuarios regulares.
 - Creación y administración de preguntas y carreras profesionales.

@@ -31,6 +31,8 @@ IMPORTANTE! El primero usuario administrador es credo por default, pero esta suj
 
   - `Username:` Administration
   - `Password:` defaultPassword
+
+NOTA: Si ERES EVALUADOR DE LINKTIC, HE DEJADO LAS CREDENCIALES DEL ADMIN EN EL PIE DEL CORREO ELECTRONICO DONDE ADJUNTO EL REPOSITORIO. GRACIAS.
 ---
 
 ## Instalación

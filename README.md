@@ -27,7 +27,8 @@
 ## Url
 IMPORTANTE! El primero usuario administrador es credo por default, pero esta sujeto a su modificación.
 
-`URL:` https://frontendorientacionvocacional.vercel.app/
+`URL FRONTEND:` https://frontendorientacionvocacional.vercel.app/
+`URL: BACKEND` https://backorientacionvocacional.vercel.app/
 
   - `Username:` Administration
   - `Password:` defaultPassword

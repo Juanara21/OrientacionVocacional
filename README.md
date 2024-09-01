@@ -626,7 +626,7 @@ La arquitectura de la aplicación se basa en un enfoque de cliente-servidor con 
 
 #### Diagrama de la arquitectura de software.
 
-<p align="center"><img src="https://www.canva.com/design/DAF7H9kZwW8/l5plDWAwqgLaHqlD1IdHhg/view?utm_content=DAF7H9kZwW8&utm_campaign=designshare&utm_medium=link&utm_source=editor"/></p> 
+<p align="center">![UserForm](https://github.com/user-attachments/assets/4b777076-da4c-41dd-8ef0-0dd086b1c1bd)</p> 
 ---
 
 ## Características 

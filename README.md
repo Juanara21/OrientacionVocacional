@@ -25,7 +25,7 @@
 ---
 
 ## Url
-IMPORTANTE! El primero usuario administrador es credo por default, pero esta sujeto a su modificación.
+IMPORTANTE! El primero usuario administrador es credo por default, pero esta sujeto a su modificación, para los usuarios generales se requiere registro.
 
 `URL FRONTEND:` https://frontendorientacionvocacional.vercel.app/
 

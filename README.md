@@ -25,12 +25,12 @@
 ---
 
 ## Url
-<p>IMPORTANTE! El primero usuario administrador es credo por default, pero esta sujeto a su modificación. </p>
+IMPORTANTE! El primero usuario administrador es credo por default, pero esta sujeto a su modificación.
 
 `URL:` https://frontendorientacionvocacional.vercel.app/
 
-   `Username:` Administration
-   `Password:` defaultPassword
+  - `Username:` Administration
+  - `Password:` defaultPassword
 ---
 
 ## Instalación
